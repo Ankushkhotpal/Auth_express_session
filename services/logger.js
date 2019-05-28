@@ -67,7 +67,7 @@ log4js.configure({
     appenders: {
         test: {
             type: 'dateFile',
-            filename: 'logs/test',
+            filename: 'logs/api',
             "pattern": "-dd-MM-yyyy.log",
             alwaysIncludePattern: true
         }

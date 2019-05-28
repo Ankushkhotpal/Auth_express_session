@@ -1,12 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const config = require(__dirname + '/../config/appconfig.json');
 const hash = require('../services/encryptor.js');
 const jwt = require('../services/jwtokenizer.js');
 const vjwt = require('jsonwebtoken');
-var db = require('../models');
-var token = null;
-var logger = require('../services/logger.js');
+const db = require('../models');
+const logger = require('../services/logger.js');
 var log = logger.LOG;
 
 const expressValidator = require('express-validator');
@@ -15,6 +14,7 @@ const {
     validationResult
 } = require('express-validator/check');
 
+var token = null;
 
 
 router.post('/api/signin', [
@@ -34,7 +34,7 @@ router.post('/api/signin', [
     log.trace(session);
     session = req.body;
 
-    log.info('sign In body ', req.body);
+    log.info('sign In body ', session);
 
     db.users.findOne({
         where: {
@@ -106,6 +106,11 @@ router.post('/api/signin', [
             })
         }
 
+    }).catch(err => {
+        log.error("error in finding user --> ", err);
+        res.json({
+            error:`User not found for provided --> ${req.body.email}`
+        })
     });
 });
 

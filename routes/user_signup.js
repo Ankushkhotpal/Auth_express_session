@@ -1,8 +1,8 @@
-var express = require('express');
-var router = express.Router();
-var db = require('../models');
+const express = require('express');
+const router = express.Router();
+const db = require('../models');
 const hash = require('../services/encryptor.js');
-var logger = require('../services/logger.js');
+const logger = require('../services/logger.js');
 var log = logger.LOG;
 const expressValidator = require('express-validator');
 const {

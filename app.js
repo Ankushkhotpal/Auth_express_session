@@ -1,20 +1,21 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var morgonlogger = require('morgan');
-var bodyparser = require('body-parser');
-var app = express();
-var log4js = require('log4js');
-var logger = log4js.getLogger();
+const express = require('express');
+const helmet = require('helmet')
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const morgonlogger = require('morgan');
+const bodyparser = require('body-parser');
+const app = express();
+const log4js = require('log4js');
+const logger = log4js.getLogger();
 logger.level = 'debug';
 
 // Including API Route file 
-var sessionManagement = require('./services/sessionManagement');
-var api_forgotpass = require('./routes/users_forgotPass');
-var api_signup = require('./routes/user_signup.js');
-var api_signin = require('./routes/user_signIn.js');
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const sessionManagement = require('./services/sessionManagement');
+const api_forgotpass = require('./routes/users_forgotPass');
+const api_signup = require('./routes/user_signup.js');
+const api_signin = require('./routes/user_signIn.js');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
 
 // express inbuilt body parser
 // app.use(express.json());
@@ -44,6 +45,7 @@ app.use(bodyparser.text());
 app.set('trust proxy', 1) // trust first proxy
 app.use(sessionManagement);
 
+app.use(helmet());
 
 // Setting cores 
 app.use((req, res, next) => {

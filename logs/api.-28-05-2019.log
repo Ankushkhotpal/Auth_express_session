@@ -1,0 +1,121 @@
+[2019-05-28T17:08:06.945] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T17:08:06.957] [ERROR] test - error in finding user -->  TypeError: Cannot read property 'session_status' of null
+    at G:\Web_Development\node_sessions\routes\user_signIn.js:49:18
+    at tryCatcher (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:517:31)
+    at Promise._settlePromise (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:574:18)
+    at Promise._settlePromise0 (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:619:10)
+    at Promise._settlePromises (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:699:18)
+    at _drainQueueStep (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:138:12)
+    at _drainQueue (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:131:9)
+    at Async._drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:147:5)
+    at Immediate.Async.drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+[2019-05-28T17:14:19.424] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T17:14:19.481] [ERROR] test - error in finding user -->  TypeError: Cannot read property 'session_status' of null
+    at G:\Web_Development\node_sessions\routes\user_signIn.js:49:18
+    at tryCatcher (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:517:31)
+    at Promise._settlePromise (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:574:18)
+    at Promise._settlePromise0 (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:619:10)
+    at Promise._settlePromises (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:699:18)
+    at _drainQueueStep (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:138:12)
+    at _drainQueue (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:131:9)
+    at Async._drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:147:5)
+    at Immediate.Async.drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+[2019-05-28T17:14:38.601] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T17:14:38.609] [ERROR] test - error in finding user -->  TypeError: Cannot read property 'session_status' of null
+    at G:\Web_Development\node_sessions\routes\user_signIn.js:49:18
+    at tryCatcher (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:517:31)
+    at Promise._settlePromise (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:574:18)
+    at Promise._settlePromise0 (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:619:10)
+    at Promise._settlePromises (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:699:18)
+    at _drainQueueStep (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:138:12)
+    at _drainQueue (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:131:9)
+    at Async._drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:147:5)
+    at Immediate.Async.drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+[2019-05-28T17:14:50.327] [INFO] test - sign In body  { email: 'ankush.khotpal@gmail.com', password: 'veenavilas' }
+[2019-05-28T17:15:05.649] [INFO] test - sign In body  { email: 'ankush.khotpal@gmail.com',
+  password: 'ankush@minemark' }
+[2019-05-28T17:15:05.778] [ERROR] test - error in finding user -->  TypeError: Assignment to constant variable.
+    at G:\Web_Development\node_sessions\routes\user_signIn.js:67:27
+    at tryCatcher (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:517:31)
+    at Promise._settlePromise (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:574:18)
+    at Promise._settlePromise0 (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:619:10)
+    at Promise._settlePromises (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:699:18)
+    at _drainQueueStep (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:138:12)
+    at _drainQueue (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:131:9)
+    at Async._drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:147:5)
+    at Immediate.Async.drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+[2019-05-28T17:15:45.162] [INFO] test - sign In body  { email: 'ankush.khotpal@gmail.com',
+  password: 'ankush@minemark' }
+[2019-05-28T17:15:45.250] [ERROR] test - error in finding user -->  TypeError: Assignment to constant variable.
+    at G:\Web_Development\node_sessions\routes\user_signIn.js:67:27
+    at tryCatcher (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:517:31)
+    at Promise._settlePromise (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:574:18)
+    at Promise._settlePromise0 (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:619:10)
+    at Promise._settlePromises (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\promise.js:699:18)
+    at _drainQueueStep (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:138:12)
+    at _drainQueue (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:131:9)
+    at Async._drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:147:5)
+    at Immediate.Async.drainQueues (G:\Web_Development\node_sessions\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+[2019-05-28T17:17:20.070] [INFO] test - sign In body  { email: 'ankush.khotpal@gmail.com',
+  password: 'ankush@minemark' }
+[2019-05-28T17:18:12.945] [INFO] test - logout body  {}
+[2019-05-28T17:18:12.946] [INFO] test - decoded var { email_id: 'ankush.khotpal@gmail.com',
+  user_id: 1,
+  user_name: 'Ankush Khotpal',
+  iat: 1559044040,
+  exp: 1559054840 }
+[2019-05-28T17:18:12.946] [INFO] test - JWT token Email ID decode -->  ankush.khotpal@gmail.com user_id -->  1
+[2019-05-28T17:18:39.278] [INFO] test - sign In body  { email: 'ankush.khotpal@gmail.com',
+  password: 'ankush@minemark' }
+[2019-05-28T17:19:14.609] [INFO] test - logout body  {}
+[2019-05-28T17:19:14.609] [INFO] test - decoded var { email_id: 'ankush.khotpal@gmail.com',
+  user_id: 1,
+  user_name: 'Ankush Khotpal',
+  iat: 1559044040,
+  exp: 1559054840 }
+[2019-05-28T17:19:14.610] [INFO] test - JWT token Email ID decode -->  ankush.khotpal@gmail.com user_id -->  1
+[2019-05-28T17:22:55.098] [INFO] test - Forgot password body  { email: 'ankush.khotpal@gmail.com' }
+[2019-05-28T17:22:56.530] [ERROR] test - { Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials b35sm2328349pjc.15 - gsmtp
+    at SMTPConnection._formatError (G:\Web_Development\node_sessions\node_modules\nodemailer\lib\smtp-connection\index.js:781:19)
+    at SMTPConnection._actionAUTHComplete (G:\Web_Development\node_sessions\node_modules\nodemailer\lib\smtp-connection\index.js:1516:34)
+    at SMTPConnection._responseActions.push.str (G:\Web_Development\node_sessions\node_modules\nodemailer\lib\smtp-connection\index.js:554:26)
+    at SMTPConnection._processResponse (G:\Web_Development\node_sessions\node_modules\nodemailer\lib\smtp-connection\index.js:940:20)
+    at SMTPConnection._onData (G:\Web_Development\node_sessions\node_modules\nodemailer\lib\smtp-connection\index.js:746:14)
+    at TLSSocket.SMTPConnection._onSocketData (G:\Web_Development\node_sessions\node_modules\nodemailer\lib\smtp-connection\index.js:189:46)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at TLSSocket.Readable.push (_stream_readable.js:208:10)
+    at TLSWrap.onread (net.js:597:20)
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials b35sm2328349pjc.15 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN' }
+[2019-05-28T17:24:08.802] [INFO] test - Forgot password token  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFua3VzaC5raG90cGFsQGdtYWlsLmNvbSIsInVzZXJfaWQiOjEsImlhdCI6MTU1OTA0NDM3NSwiZXhwIjoxNTU5MDU1MTc1fQ.-6ZHzu0e6OAkYw891aEjCviaJnNuNC7TmAZq-5DFhwY
+[2019-05-28T17:24:08.804] [INFO] test - id from token ankush.khotpal@gmail.com
+[2019-05-28T17:24:08.810] [INFO] test - otp stored in table  5474

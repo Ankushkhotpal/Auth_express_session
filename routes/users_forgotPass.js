@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var db = require('../models');
+const express = require('express');
+const router = express.Router();
+const db = require('../models');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
 const config = require(__dirname + '/../config/appconfig.json');
@@ -75,11 +75,11 @@ router.post('/api/forgot_password', function (req, res) {
 
                 transporter.sendMail(mailOptions, function (error, info) {
                     if (error) {
-                        log.error(error);
+                        log.error("Error in sending email --> ", error);
                     } else {
                         log.info('Email sent: ' + info.response);
                     }
-                });
+                })
 
             }).catch(err => {
                 res.status(500).json({
@@ -111,6 +111,7 @@ router.post('/api/verify_password', function (req, res) {
     jwt.verify(token, config.JWT_KEY, function (err, decoded) {
 
         if (err) {
+            // log.
             return res.status(500).send({
                 auth: false,
                 message: 'Failed to authenticate token.'
@@ -135,7 +136,7 @@ router.post('/api/verify_password', function (req, res) {
 
             log.info("otp stored in table ", user.email_otp);
 
-            if (user.email_otp == req.body.email_otp) {
+            if (user.email_otp === req.body.email_otp) {
 
                 return user.update({
                     // email_otp: req.body.email_otp,
@@ -223,19 +224,27 @@ router.put('/api/newpassword', function (req, res) {
                             message: 'user password not updated.'
                         });
                     }
+                    if (req.session.sid) {
 
-                    req.session.destroy(function (err) {
-                        if (err) {
-                            log.error("error in clearing session---> ", err);
-                        }
-
-                        return res.status(200).json({
-                            // new_password: result.password,
+                        res.clearCookie('sid');
+                        res.json({
                             message: 'user password has updated successfully.',
-                            // success: 'Welcome to the JWT Auth',
-
                         });
-                    });
+
+                    } else {
+                        req.session.destroy(function (err) {
+                            if (err) {
+                                log.error("error in clearing session---> ", err);
+                            }
+
+                            return res.status(200).json({
+                                // new_password: result.password, 
+                                message: 'user password has updated successfully.',
+                                // success: 'Welcome to the JWT Auth',
+
+                            });
+                        });
+                    }
                 });
             } else if (user.otp_verify_status === "UNVERIFIED") {
 
