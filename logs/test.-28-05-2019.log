@@ -1,0 +1,161 @@
+
+[2019-05-28T01:50:12.010] [INFO] test - encrypted password for provided email_id - ankush.khotpal@minemarksolutions.com ----> $2a$10$inJPP3Hs9Te.s7UNjkAFaeRgFYVyuu1kIj6Mcf6yxr86KPwIyAzoy
+[2019-05-28T01:50:12.010] [INFO] test - { email_id: 'ankush.khotpal@minemarksolutions.com',
+  password: '$2a$10$inJPP3Hs9Te.s7UNjkAFaeRgFYVyuu1kIj6Mcf6yxr86KPwIyAzoy',
+  full_name: 'Ankush Khotpal',
+  session_status: 'INACTIVE' }
+[2019-05-28T01:51:45.374] [INFO] test - SignUP request body =>  { email: 'ankush.khotpal@minemarksolutions.com',
+  full_name: 'Ankush Khotpal',
+  password: 'veenavilas' }
+[2019-05-28T01:51:45.486] [INFO] test - encrypted password for provided email_id - ankush.khotpal@minemarksolutions.com ----> $2a$10$bZX96HOBd2JK9OEcpN5AUuCUxFCg0qxHOPHigrJlEP5dhe.KcEcXW
+[2019-05-28T01:51:45.486] [INFO] test - { email_id: 'ankush.khotpal@minemarksolutions.com',
+  password: '$2a$10$bZX96HOBd2JK9OEcpN5AUuCUxFCg0qxHOPHigrJlEP5dhe.KcEcXW',
+  full_name: 'Ankush Khotpal',
+  session_status: 'INACTIVE' }
+[2019-05-28T01:54:18.143] [INFO] test - User already exists for provided email =>  ankush.khotpal@minemarksolutions.com
+[2019-05-28T02:04:47.803] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T02:22:09.467] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T02:25:22.904] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T03:03:50.919] [INFO] test - logout body  {}
+[2019-05-28T03:05:50.580] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T03:06:18.210] [INFO] test - logout body  {}
+[2019-05-28T03:07:23.416] [INFO] test - logout body  {}
+[2019-05-28T03:07:46.862] [INFO] test - logout body  {}
+[2019-05-28T03:08:39.283] [INFO] test - logout body  {}
+[2019-05-28T03:08:39.287] [INFO] test - decoded var undefined
+[2019-05-28T03:09:34.554] [INFO] test - logout body  {}
+[2019-05-28T03:09:34.559] [INFO] test - decoded var { email_id: 'ankush.khotpal@minemarksolutions.com',
+  user_id: 1,
+  user_name: 'Ankush Khotpal',
+  iat: 1558992950,
+  exp: 1559003750 }
+[2019-05-28T03:09:34.560] [INFO] test - JWT token Email ID decode -->  ankush.khotpal@minemarksolutions.com user_id -->  1
+[2019-05-28T03:09:42.848] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T03:09:48.203] [INFO] test - logout body  {}
+[2019-05-28T03:09:48.204] [INFO] test - decoded var { email_id: 'ankush.khotpal@minemarksolutions.com',
+  user_id: 1,
+  user_name: 'Ankush Khotpal',
+  iat: 1558992950,
+  exp: 1559003750 }
+[2019-05-28T03:09:48.204] [INFO] test - JWT token Email ID decode -->  ankush.khotpal@minemarksolutions.com user_id -->  1
+[2019-05-28T03:09:53.983] [INFO] test - logout body  {}
+[2019-05-28T03:09:53.984] [INFO] test - decoded var { email_id: 'ankush.khotpal@minemarksolutions.com',
+  user_id: 1,
+  user_name: 'Ankush Khotpal',
+  iat: 1558992950,
+  exp: 1559003750 }
+[2019-05-28T03:09:53.984] [INFO] test - JWT token Email ID decode -->  ankush.khotpal@minemarksolutions.com user_id -->  1
+[2019-05-28T11:03:42.779] [INFO] test - logout body  {}
+[2019-05-28T11:03:42.783] [ERROR] test - error token authentication --->  { TokenExpiredError: jwt expired
+    at G:\Web_Development\node_sessions\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\Web_Development\node_sessions\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\Web_Development\node_sessions\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\Web_Development\node_sessions\routes\user_signIn.js:105:10
+    at Layer.handle [as handle_request] (G:\Web_Development\node_sessions\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\Web_Development\node_sessions\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\Web_Development\node_sessions\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\Web_Development\node_sessions\node_modules\express\lib\router\layer.js:95:5)
+    at G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\Web_Development\node_sessions\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:317:13)
+    at G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:275:10)
+    at G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:635:15
+    at next (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:47:12)
+  name: 'TokenExpiredError',
+  message: 'jwt expired',
+  expiredAt: 2019-05-28T00:35:50.000Z }
+[2019-05-28T11:04:02.307] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T11:21:36.808] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T11:21:40.842] [INFO] test - logout body  {}
+[2019-05-28T11:21:40.844] [ERROR] test - error token authentication --->  { TokenExpiredError: jwt expired
+    at G:\Web_Development\node_sessions\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (G:\Web_Development\node_sessions\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (G:\Web_Development\node_sessions\node_modules\jsonwebtoken\verify.js:94:10)
+    at G:\Web_Development\node_sessions\routes\user_signIn.js:106:10
+    at Layer.handle [as handle_request] (G:\Web_Development\node_sessions\node_modules\express\lib\router\layer.js:95:5)
+    at next (G:\Web_Development\node_sessions\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (G:\Web_Development\node_sessions\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (G:\Web_Development\node_sessions\node_modules\express\lib\router\layer.js:95:5)
+    at G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (G:\Web_Development\node_sessions\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:317:13)
+    at G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:335:12)
+    at next (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:275:10)
+    at G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:635:15
+    at next (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:174:3)
+    at router (G:\Web_Development\node_sessions\node_modules\express\lib\router\index.js:47:12)
+  name: 'TokenExpiredError',
+  message: 'jwt expired',
+  expiredAt: 2019-05-28T00:35:50.000Z }
+[2019-05-28T11:22:20.119] [INFO] test - logout body  {}
+[2019-05-28T11:23:12.480] [INFO] test - logout body  {}
+[2019-05-28T11:23:58.693] [INFO] test - logout body  {}
+[2019-05-28T11:23:58.696] [INFO] test - decoded var { email_id: 'ankush.khotpal@minemarksolutions.com',
+  user_id: 1,
+  user_name: 'Ankush Khotpal',
+  iat: 1559021642,
+  exp: 1559032442 }
+[2019-05-28T11:23:58.697] [INFO] test - JWT token Email ID decode -->  ankush.khotpal@minemarksolutions.com user_id -->  1
+[2019-05-28T11:24:09.265] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T11:27:11.898] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T11:27:15.797] [INFO] test - logout body  {}
+[2019-05-28T11:27:15.797] [INFO] test - decoded var { email_id: 'ankush.khotpal@minemarksolutions.com',
+  user_id: 1,
+  user_name: 'Ankush Khotpal',
+  iat: 1559021642,
+  exp: 1559032442 }
+[2019-05-28T11:27:15.797] [INFO] test - JWT token Email ID decode -->  ankush.khotpal@minemarksolutions.com user_id -->  1
+[2019-05-28T11:28:12.169] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T11:28:29.607] [INFO] test - logout body  {}
+[2019-05-28T11:28:29.608] [INFO] test - decoded var { email_id: 'ankush.khotpal@minemarksolutions.com',
+  user_id: 1,
+  user_name: 'Ankush Khotpal',
+  iat: 1559021642,
+  exp: 1559032442 }
+[2019-05-28T11:28:29.609] [INFO] test - JWT token Email ID decode -->  ankush.khotpal@minemarksolutions.com user_id -->  1
+[2019-05-28T12:48:39.182] [INFO] test - sign In body  { email: 'ankush.khotpal@minemarksolutions.com',
+  password: 'veenavilas' }
+[2019-05-28T12:49:29.900] [INFO] test - logout body  {}
+[2019-05-28T12:49:29.902] [INFO] test - decoded var { email_id: 'ankush.khotpal@minemarksolutions.com',
+  user_id: 1,
+  user_name: 'Ankush Khotpal',
+  iat: 1559021642,
+  exp: 1559032442 }
+[2019-05-28T12:49:29.902] [INFO] test - JWT token Email ID decode -->  ankush.khotpal@minemarksolutions.com user_id -->  1
+[2019-05-28T12:56:02.625] [INFO] test - Forgot password body  { email: 'ankush.khotpal@gmail.com' }
+[2019-05-28T12:56:06.290] [INFO] test - Email sent: 250 2.0.0 OK  1559028364 f29sm20923925pfq.11 - gsmtp
+[2019-05-28T13:00:40.339] [INFO] test - Forgot password body  { email: 'ankush.khotpal@gmail.com' }
+[2019-05-28T13:00:43.280] [INFO] test - Email sent: 250 2.0.0 OK  1559028641 h60sm3243106pjb.10 - gsmtp
+[2019-05-28T13:01:41.616] [INFO] test - Forgot password token  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFua3VzaC5raG90cGFsQGdtYWlsLmNvbSIsInVzZXJfaWQiOjEsImlhdCI6MTU1OTAyODY0MCwiZXhwIjoxNTU5MDM5NDQwfQ.AIggwAnWIR5b5k32YD_sAZ4WHFndq-BTg3hd6UF8NBw
+[2019-05-28T13:01:41.617] [INFO] test - id from token ankush.khotpal@gmail.com
+[2019-05-28T13:01:41.623] [INFO] test - otp stored in table  8531
+[2019-05-28T13:10:52.688] [INFO] test - Forgot password token  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFua3VzaC5raG90cGFsQGdtYWlsLmNvbSIsInVzZXJfaWQiOjEsImlhdCI6MTU1OTAyODY0MCwiZXhwIjoxNTU5MDM5NDQwfQ.AIggwAnWIR5b5k32YD_sAZ4WHFndq-BTg3hd6UF8NBw
+[2019-05-28T13:10:52.691] [INFO] test - id from token ankush.khotpal@gmail.com
+[2019-05-28T13:10:52.703] [INFO] test - otp stored in table  8531
+[2019-05-28T13:12:49.808] [INFO] test - Forgot password token  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFua3VzaC5raG90cGFsQGdtYWlsLmNvbSIsInVzZXJfaWQiOjEsImlhdCI6MTU1OTAyODY0MCwiZXhwIjoxNTU5MDM5NDQwfQ.AIggwAnWIR5b5k32YD_sAZ4WHFndq-BTg3hd6UF8NBw
+[2019-05-28T13:12:49.811] [INFO] test - id from token ankush.khotpal@gmail.com
+[2019-05-28T13:12:49.849] [INFO] test - otp stored in table  8531

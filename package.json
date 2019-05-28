@@ -1,0 +1,41 @@
+{
+  "name": "auth_using_express-sessions",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect": "^3.7.0",
+    "connect-session-sequelize": "^6.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^4.3.0",
+    "morgan": "~1.9.1",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "nodemailer": "^6.2.1",
+    "nodemon": "^1.19.1",
+    "random-number": "0.0.9",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0"
+  },
+  "description": "Intention behind creating this project to understand creation of sessions in express-js using express-session with sequelize for Mysql. This project has basic signin ,signup, signout and forgot password.",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankushkhotpal/Auth_express_session.git"
+  },
+  "author": "Ankush Khotpal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ankushkhotpal/Auth_express_session/issues"
+  },
+  "homepage": "https://github.com/Ankushkhotpal/Auth_express_session#readme"
+}
