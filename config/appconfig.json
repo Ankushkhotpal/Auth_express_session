@@ -1,9 +1,9 @@
 {
-    "JWT_KEY": "minemark88",
+    "JWT_KEY": "ankush88",
     "JWT_VALIDITY": "3h",
     "EMAIL_SERVICE": "gmail",
-    "FROM_EMAIL": "ankush.khotpal@minemarksolutions.com",
-    "EMAIL_PASS": "ankush@minemark",
+    "FROM_EMAIL": "ankush.khotpal@gmail.com",
+    "EMAIL_PASS": "emailpassword",
     "SESSION_SECRET": "expresessions",
     "PORT": "9370"
 }
