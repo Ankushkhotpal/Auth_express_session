@@ -22,7 +22,7 @@
     "nodemailer": "^6.2.1",
     "nodemon": "^1.19.1",
     "random-number": "0.0.9",
-    "sequelize": "^5.8.6",
+    "sequelize": "^5.15.1",
     "sequelize-cli": "^5.4.0"
   },
   "description": "Intention behind creating this project to understand creation of sessions in express-js using express-session with sequelize for Mysql. This project has basic signin ,signup, signout and forgot password.",
